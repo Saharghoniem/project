@@ -1,0 +1,414 @@
+  /* =============
+ table of contents
+===============
+0. global styles
+1. HEADER
+2- IMAGE 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============
+   0. global styles
+================ */
+
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+html {scroll-behavior: smooth;}
+ 
+
+html {box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+
+
+::-webkit-scrollbar {
+    width: 1.1rem;
+   }
+  
+  ::-webkit-scrollbar-track {
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #4858e6, #3d4a59);
+    border-radius: 1rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(270deg, #9e4673, #3d4a59, #9e4673);
+  }
+  
+  /* for Firefox */
+   html {scrollbar-color: #9e4673 #3d4a59;}
+/* ===============
+   1. HEADER
+================ */
+a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+
+    display: inline-block;
+}
+
+a:hover{
+    background-color: rgb(156, 153, 153);
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.fa-house-user{
+    font-size: 13px;
+}
+
+.fa-search{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    background-color: #d942b6;
+}
+
+.parent-link{
+    background-color: rgb(82, 79, 79);
+    width: 130px;
+display: flex;
+flex-direction: column;
+
+
+position: absolute;
+margin-left: 360px;
+
+visibility: hidden;
+}
+
+.drop:hover + .parent-link{
+    visibility: visible;
+     
+}
+
+
+
+/* ===============
+   2- IMAGE 
+================ */
+ 
+.main-img{
+    width: 70%;
+    height: 450px;
+}
+
+.learn{
+    color: white;
+ font-size: 25px;
+
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+    background-color: black;
+
+}
+
+.learn:hover{
+    background-color: teal;
+}
+
+
+
+/* ===============
+   3- OUR TEAM
+================ */
+
+#team{
+  
+    padding-top: 70px;
+}
+.our-team, .meet{
+    text-align: center;
+
+    
+}
+
+.our-team{
+    margin-bottom: 14px;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+.jone{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.division{
+ 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tar{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 40%;
+}
+
+/* ===============
+   4- Our Work
+================ */
+
+
+
+.gray{
+    margin-top: 60px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #333333 ;
+    display: flex;
+    justify-content: space-around;
+}
+.our-work{
+width: 25%;
+color: white;
+
+line-height: 24px;
+}
+
+.white{
+    background-color: #fff;
+    height: 360px;
+    width: 23%;
+
+    line-height: 30px;
+}
+
+.snow{
+    height: 160px;
+    width: 100%;
+}
+
+
+
+.white h3,  .white p{
+    padding-left: 12px;
+}
+
+.our-work h2{
+    margin-bottom: 20px;
+}
+
+.our-work p{
+    margin-left: 7px;
+}
+
+
+
+/* ===============
+   5- PRICING 
+================ */
+.pricing{
+  
+    text-align: center;
+    margin-top: 90px;
+}
+
+.basic{
+    margin-top: 60px;
+    border: 1px solid rgb(211, 206, 206);
+    width: 30%;
+}
+
+.basic:hover{
+    box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19) ;
+}
+
+.basic h4{
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
+
+.basic p{
+    border: 1px solid rgb(211, 206, 206);
+    padding: 17px 0;
+
+
+}
+
+ .signup{
+     background-color: teal;
+     margin-top: 10px;
+     margin-bottom: 10px;
+
+     padding: 12px 20px;
+ }
+
+ .parent-of-basic{
+     display: flex;
+     justify-content: space-around;
+ }
+
+
+
+
+
+/* ===============
+   6- Contact Us
+================ */
+ .form{
+     margin-top: 100px;
+     background-color: rgb(236, 236, 236);
+
+     padding: 60px 0;
+
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .contact-us h1{
+     border-bottom: 4px solid teal;
+
+
+     
+
+     display: inline-block;
+ }
+
+ .contact-us{
+  
+     width: 40%;
+     line-height: 40px;
+     padding-left: 20px;
+
+     margin-top: 40px;
+ }
+
+ .real-form{
+     
+     background-color: white;
+     width: 55%;
+
+     box-shadow: 5px 5px 25px rgb(190, 188, 188);
+
+     padding-left: 19px;
+     padding-top: 20px;
+ }
+
+ input{
+     border: none;
+     border-bottom: 1px solid rgb(201, 200, 200);
+     height: 30px;
+     width: 100%;
+ }
+ .checkbox{
+     width: 20px;
+ }
+
+ .check-label{
+     position: relative;
+     bottom: 10px;
+     left: 19px;
+ }
+
+ button{
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     border: 1px solid black;
+
+     float: right;
+     margin-bottom: 17px;
+     margin-right: 10px;
+ }
+
+
+
+ 
+/* ===============
+   7- map
+================ */
+ .anbiaa{
+     width: 60%;
+     min-height: 300px;
+     border-radius: 20%;
+     display: grid;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+
+
+
+ 
+/* ===============
+   8- footer
+================ */
+footer{
+    margin-top: 100px;
+    background-color: black;
+    padding: 40px 0;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+ .main-icon{
+    
+    display: flex;
+    justify-content: center;
+ }
+
+ .main-icon div{
+     background-color: teal;
+     color: white;
+ 
+     padding: 8px 16px;
+
+     margin-left: 5px;
+ }
+
+ .main-icon div:hover{
+     background-color: rgb(204, 202, 202);
+ }
